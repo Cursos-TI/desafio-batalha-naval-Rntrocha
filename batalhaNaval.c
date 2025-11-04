@@ -36,7 +36,7 @@ int main()
 
     printf("\n");
 
-    // Imprimir linhas: rótulo 1…10 e os valores da matriz
+    // Imprimir linhas 
     for (int i = 0; i < 10; i++)
     {
         printf("%d ", i+ 1);
