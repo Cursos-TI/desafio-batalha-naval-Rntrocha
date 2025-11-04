@@ -28,6 +28,30 @@ int main()
     tabuleiro[5][7] = 7; // ACRESCENTANDO O 7 NA CASA H6
     tabuleiro[6][7] = 7; // ACRESCENTANDO O 7 NA CASA H7
     tabuleiro[7][7] = 7; // ACRESCENTANDO O 7 NA CASA H8
+    
+    int linha = 1;   // inicio na linha 2 
+    int coluna = 1;  // inicio da coluna 
+    int tamanho = 4; // tamanho do navio
+
+    for (int k = 0; k < tamanho; k++)
+    {
+        if (linha + k < 10 && coluna + k < 10)
+        {
+            tabuleiro[linha + k][coluna + k] = 3;
+        }
+    }
+
+    int tamanho2 = 4;
+    int linha2 = 4;   
+    int coluna2 = 4;  
+
+    for (int k2 = 0; k2 < tamanho2; k2++)
+    {
+        if (linha2 - k2 >= 0 && coluna2 + k2 < 10)
+        {
+            tabuleiro[linha2 - k2][coluna2 + k2] = 3;
+        }
+    }
 
     
     // imprimir colunas
